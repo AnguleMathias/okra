@@ -1,6 +1,7 @@
 import puppeteer from "puppeteer";
 import { config } from "dotenv";
 
+import authenticate from "./utils/authenticate";
 import sleepFor from "./utils/sleepFor";
 
 config();
@@ -19,8 +20,11 @@ const mainApp = async () => {
     await page.goto(URL, { waitUntil: "networkidle2" });
     await sleepFor(page, 1000, 2000);
 
+    // login to okra
+    await authenticate(page);
+
     // close browser
-    await browser.close();
+    // await browser.close();
   } catch (err) {
     console.log(err);
   }
