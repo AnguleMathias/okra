@@ -1,0 +1,18 @@
+{
+  "name": "okra",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "repository": "https://github.com/AnguleMathias/okra.git",
+  "author": "Mathias Angule <angulemathias3@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "dotenv": "^16.0.1",
+    "puppeteer": "^15.1.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  }
+}
